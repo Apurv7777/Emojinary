@@ -30,6 +30,7 @@ export default function App() {
     setLikeCounter(likeCounts + 1);
   }
   function dislike() {
+    button.style.display = "disabled";
     if (likeCounts > 0) {
       setLikeCounter(likeCounts - 1);
     }
@@ -59,7 +60,7 @@ export default function App() {
           color: "#FDA50F"
         }}
       >
-        <span style={{ color: "#FEE227" }}>Welcome !</span>
+        <span style={{ color: "#FEE227" }}>Know the Emoji !</span>
       </h1>
       <input onChange={showMeaning} />
       <output>{userInput} </output>
